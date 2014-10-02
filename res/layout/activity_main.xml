@@ -8,9 +8,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.calcucookapp.MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/lvFood"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_above="@+id/butSetTimer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/butExit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/but_exit" />
+
+    <Button
+        android:id="@+id/butSetTimer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butExit"
+        android:layout_alignBottom="@+id/butExit"
+        android:layout_alignRight="@+id/lvFood"
+        android:text="@string/but_set_timer" />
 
 </RelativeLayout>

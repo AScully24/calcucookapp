@@ -4,5 +4,10 @@
     <string name="app_name">CalcUCookApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="but_set_timer">Set Timer</string>
+    <string name="but_exit">Exit</string>
+    <string name="but_return">Return</string>
+    <string name="add_item">Add Item</string>
+    <string name="tv_item_name">Item Name</string>
+	<string name="tv_item_time">Time to Cook (Mins)</string>
 </resources>

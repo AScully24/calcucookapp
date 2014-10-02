@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/tv_item_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvItemName"
+        android:layout_below="@+id/tvItemName"
+        android:inputType="text"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etItemName"
+        android:layout_below="@+id/etItemName"
+        android:layout_marginTop="34dp"
+        android:text="@string/tv_item_time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etItenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvItemTime"
+        android:layout_below="@+id/tvItemTime"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/butAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="83dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/add_item" />
+
+    <Button
+        android:id="@+id/butReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butAddItem"
+        android:layout_alignBottom="@+id/butAddItem"
+        android:layout_alignLeft="@+id/etItenTime"
+        android:text="@string/but_return" />
+
+</RelativeLayout>
