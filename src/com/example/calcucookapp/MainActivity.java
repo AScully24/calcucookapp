@@ -34,18 +34,30 @@ public class MainActivity extends ActionBarActivity {
 		additem();
 	}
 	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if (requestCode == 1) {
+			if (resultCode == RESULT_OK) {	
+				String itemName = data.getStringExtra(NewItem.ITEM_NAME);
+				String itemTime = data.getStringExtra(NewItem.ITEM_TIME);
+				listStrings.add(itemName + " - " + itemTime + "min(s)");
+				adapter.notifyDataSetChanged();
+			}
+		}
+		
+	}
+
 	// Separate function for the ListView OnClickListener.
 	//Opens a new activity for the user to input the item name and cooking time.
 	private void additem() {
 		foodItems.setOnItemClickListener(new OnItemClickListener() {
-
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int id,
 					long position) {
 				if (position >= 0) {
-					Intent i = new Intent();
-					listStrings.add("Cheese - 20 mins");
-					adapter.notifyDataSetChanged();
+					Intent newItem = new Intent(view.getContext(), NewItem.class);
+					startActivityForResult(newItem, 1);
 				}
 			}
 		});

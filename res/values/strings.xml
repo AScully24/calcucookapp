@@ -9,5 +9,7 @@
     <string name="but_return">Return</string>
     <string name="add_item">Add Item</string>
     <string name="tv_item_name">Item Name</string>
-	<string name="tv_item_time">Time to Cook (Mins)</string>
+    <string name="tv_item_time">Time to Cook (Mins)</string>
+    <string name="title_activity_new_item">NewItem</string>
+
 </resources>

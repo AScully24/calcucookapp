@@ -1108,7 +1108,7 @@ containing a value of this type.
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int etItemName=0x7f050040;
-        public static final int etItenTime=0x7f050042;
+        public static final int etItemTime=0x7f050042;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
         public static final int home=0x7f050014;
@@ -1202,11 +1202,12 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int new_item=0x7f030019;
+        public static final int activity_new_item=0x7f030019;
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
+        public static final int new_item=0x7f0c0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1256,6 +1257,7 @@ containing a value of this type.
         public static final int but_return=0x7f0a0012;
         public static final int but_set_timer=0x7f0a0010;
         public static final int hello_world=0x7f0a000e;
+        public static final int title_activity_new_item=0x7f0a0016;
         public static final int tv_item_name=0x7f0a0014;
         public static final int tv_item_time=0x7f0a0015;
     }
