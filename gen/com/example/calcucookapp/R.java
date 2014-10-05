@@ -1091,7 +1091,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050045;
+        public static final int action_settings=0x7f050046;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1147,6 +1147,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f050020;
         public static final int tvItemName=0x7f05003f;
         public static final int tvItemTime=0x7f050041;
+        public static final int tvSortedItems=0x7f050045;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1203,11 +1204,13 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
         public static final int activity_new_item=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_sorted_food_items=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
         public static final int new_item=0x7f0c0001;
+        public static final int sorted_food_items=0x7f0c0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1258,6 +1261,7 @@ containing a value of this type.
         public static final int but_set_timer=0x7f0a0010;
         public static final int hello_world=0x7f0a000e;
         public static final int title_activity_new_item=0x7f0a0016;
+        public static final int title_activity_sorted_food_items=0x7f0a0017;
         public static final int tv_item_name=0x7f0a0014;
         public static final int tv_item_time=0x7f0a0015;
     }

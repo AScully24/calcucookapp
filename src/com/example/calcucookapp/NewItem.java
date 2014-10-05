@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 public class NewItem extends ActionBarActivity {
-	public static  String ITEM_NAME = "ITEM_NAME", ITEM_TIME = "ITEM_TIME";
+	public static final String ITEM_NAME = "ITEM_NAME", ITEM_TIME = "ITEM_TIME";
 	EditText itemName, itemTime;
 	
 	@Override
@@ -19,17 +20,17 @@ public class NewItem extends ActionBarActivity {
 		itemTime = (EditText) findViewById(R.id.etItemTime);
 	}
 	
-	public void onAddItemPress(){
+	public void onAddItemPress(View v){
 		Intent returnIntent = new Intent();
 		String name = itemName.getText().toString();
 		String time = itemTime.getText().toString();
 		
-		if (name.equals("") || time.equals("")) {
-			
-		}else {
-			returnIntent.putExtra(ITEM_NAME, itemName.getText().toString());
-			returnIntent.putExtra(ITEM_NAME, itemTime.getText().toString());	
-		}
+//		if (name.equals("") || time.equals("")) {
+//			
+//		} else {
+			returnIntent.putExtra(ITEM_NAME, name);
+			returnIntent.putExtra(ITEM_TIME, time);	
+		//}
 		
 		setResult(RESULT_OK, returnIntent);
 		finish();

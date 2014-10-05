@@ -15,7 +15,8 @@
         android:layout_above="@+id/butSetTimer"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" >
+        android:layout_alignParentTop="true"
+        android:longClickable="true" >
 
     </ListView>
 
@@ -26,6 +27,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="19dp"
         android:layout_marginRight="35dp"
+        android:onClick="onExitPress"
         android:text="@string/but_exit" />
 
     <Button
@@ -35,6 +37,7 @@
         android:layout_alignBaseline="@+id/butExit"
         android:layout_alignBottom="@+id/butExit"
         android:layout_alignRight="@+id/lvFood"
+        android:onClick="onSetTimerPress"
         android:text="@string/but_set_timer" />
 
 </RelativeLayout>

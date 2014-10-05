@@ -11,5 +11,6 @@
     <string name="tv_item_name">Item Name</string>
     <string name="tv_item_time">Time to Cook (Mins)</string>
     <string name="title_activity_new_item">NewItem</string>
+    <string name="title_activity_sorted_food_items">SortedFoodItems</string>
 
 </resources>
