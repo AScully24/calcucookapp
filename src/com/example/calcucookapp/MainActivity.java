@@ -94,8 +94,8 @@ public class MainActivity extends ActionBarActivity {
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
 					int id, long position) {
 				if (position > 0) {
-					foodItemArray.remove(position - 1);
-					listStringsForLV.remove(position);
+					foodItemArray.remove((int)position - 1);
+					listStringsForLV.remove((int)position);
 					lvAdapter.notifyDataSetChanged();
 				}
 				return true;

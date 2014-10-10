@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class SortedFoodItems extends ActionBarActivity {
@@ -33,6 +34,11 @@ public class SortedFoodItems extends ActionBarActivity {
 		
 	}
 
+	
+	public void returnToItemList(View v){
+		finish();
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

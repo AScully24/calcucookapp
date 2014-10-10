@@ -17,8 +17,6 @@ public class Food implements Serializable{
     private int delay;
     private String name;
     
-    
-    
     public Food(String name,int cookingtime) {
 		super();
 		this.cookingtime = cookingtime;

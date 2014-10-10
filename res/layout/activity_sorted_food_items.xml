@@ -17,4 +17,14 @@
         android:text=""
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/butReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSortedItems"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:onClick="returnToItemList"
+        android:text="@string/but_return" />
+
 </RelativeLayout>
