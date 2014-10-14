@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-CalcUCookApp4
->>>>>>> upstream/master
+CalcUCookApp
 ============
 
 HELLO THERE
